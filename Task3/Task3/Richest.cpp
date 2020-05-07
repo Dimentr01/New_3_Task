@@ -20,7 +20,8 @@ void Richest(robbers Robber[], int &lifes)
 			proverka++;
 		}
 			
-	if (proverka==1)
-	std::cout << "Богач найден" << std::endl << std::endl;
+	if (proverka == 1)
+		std::cout << "Богач найден" << std::endl << std::endl;
+	else if (proverka == 0) std::cout << "Не найдено" << std::endl << std::endl;
 	else std::cout << "Богачи найден" << std::endl << std::endl;
 }
