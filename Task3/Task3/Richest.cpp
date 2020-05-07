@@ -6,7 +6,7 @@ void Richest(robbers Robber[], int &lifes)
 {
 	int k = 0;
 	int proverka = 0;
-	int richest = Robber[0].wealth;
+	int richest =-1;
 	for (int i = 0; i < lifes; i++)
 		if ((Robber[i].wealth > richest) and (Robber[i].life == 1))
 		{
