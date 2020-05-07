@@ -17,13 +17,16 @@ void look_at_all(robbers Robber[], int& lifes)
 	int horses = 0, sabers = 0, necklaces = 0, rubies = 0, wifes = 0, money = 0,  swealth = 0;
 	for (int i = 0; i < lifes; i++)
 	{
-		horses += Robber[i].horses;
-		sabers += Robber[i].sabers;
-		rubies += Robber[i].rubies;
-		necklaces += Robber[i].necklaces;
-		wifes += Robber[i].wifes;
-		money += Robber[i].money;
-		swealth += Robber[i].wealth;
+		if (Robber[i].life == 1)
+		{
+			horses += Robber[i].horses;
+			sabers += Robber[i].sabers;
+			rubies += Robber[i].rubies;
+			necklaces += Robber[i].necklaces;
+			wifes += Robber[i].wifes;
+			money += Robber[i].money;
+			swealth += Robber[i].wealth;
+		}
 	}
 	
 	PrintTotal(horses, sabers, rubies, necklaces, wifes, money, swealth);
